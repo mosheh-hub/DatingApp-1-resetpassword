@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201118214505_PostgresInitial")]
-    partial class PostgresInitial
+    [Migration("20230123163830_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -85,7 +85,7 @@ namespace API.Data.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("text");
 
-                    b.Property<string>("Interest")
+                    b.Property<string>("Interests")
                         .HasColumnType("text");
 
                     b.Property<string>("Introduction")

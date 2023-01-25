@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace API.Data.Migrations
 {
-    public partial class PostgresInitial : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,7 +50,7 @@ namespace API.Data.Migrations
                     Gender = table.Column<string>(nullable: true),
                     Introduction = table.Column<string>(nullable: true),
                     LookingFor = table.Column<string>(nullable: true),
-                    Interest = table.Column<string>(nullable: true),
+                    Interests = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     Country = table.Column<string>(nullable: true)
                 },

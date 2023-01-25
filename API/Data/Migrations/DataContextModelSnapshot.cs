@@ -83,7 +83,7 @@ namespace API.Data.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("text");
 
-                    b.Property<string>("Interest")
+                    b.Property<string>("Interests")
                         .HasColumnType("text");
 
                     b.Property<string>("Introduction")
